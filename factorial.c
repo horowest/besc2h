@@ -12,14 +12,9 @@ int fact(int n) {
 
 
 int main() {
-	int i, n, s = 0, f;
+	int i, n;
 	scanf("%d", &n);
-
-	for(i = 1; i <= n; i++) {
-		f = fact(i);
-		s = s + f;
-	}
-		
-	printf("Sum: %d", s);
+	
+	printf("Factorial of %d is: %d", n, fact(n));
 	return 0;
 }
