@@ -9,8 +9,11 @@ int main() {
 		temp = a + b;
 		a = b;
 		b = temp;
+		//if(temp > n)
+		//	break;
 		printf("%d ", temp);
 	}
-
+	// nth fibonacci number
+	// printf("%d", temp);
 	return 0;
 }
