@@ -13,9 +13,9 @@ int main() {
 	int n, i, no;
 	float x, sum = 0;
   	printf("Degree: ");
-	  scanf("%f", &x);
+	scanf("%f", &x);
   	printf("No. of terms: ");
-	  scanf("%d", &n);
+	scanf("%d", &n);
 	
 	x = (x*3.14)/180;
 	for(i = 0; i < n; i++) {
