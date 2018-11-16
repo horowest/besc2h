@@ -12,9 +12,9 @@ int fact(int n) {
 int main() {
 	int n, i, no;
 	float x, sum = 0;
-  printf("Degree: ");
+  	printf("Degree: ");
 	scanf("%f", &x);
-  printf("No. of terms: ");
+  	printf("No. of terms: ");
 	scanf("%d", &n);
 	
 	x = (x*3.14)/180;
