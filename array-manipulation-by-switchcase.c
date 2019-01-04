@@ -1,5 +1,48 @@
 #include<stdio.h>
 
+void oddElemet(int a[], int n, int odd) {
+	int i;
+	for(i = 0; i < n; i++) {
+		if (a[i]%2 == odd) {
+			printf("%d ", a[i]);
+		}
+	}
+	printf("\n");
+} 
+
+int sum(int a[], int n) {
+	int i = 0, s = 0;
+	
+	for(i = 0; i < n; i++)	
+		s += a[i];
+		
+	return s;
+}
+
+int average(int a[], int n) {
+	return sum(a, n)/n;
+}
+
+int max(int a[], int n) {
+	int i = 0, max = 0;
+	
+	for(i = 0; i < n; i++) {
+		if(a[i] > max)
+			max = a[i];
+	}
+	return max;
+}
+
+int min(int a[], int n) {
+	int i = 0, min = -1;
+	
+	for(i = 0; i < n; i++) {
+		if(a[i] < min || min < 0)
+			min = a[i];
+	}
+	return min;
+}
+
 void insertElement(int a[], int elm, int pos, int len) {
 	int i;
 	for(i = 9; i >= pos-1; i--) {
@@ -37,10 +80,13 @@ int main() {
 	display(a, arrlen);
 	
 	do {
- 		printf("1. Insert\n");
-		printf("2. Delete\n");
-		printf("3. Display\n");
-		printf("4. Exit\n");
+		printf("1. Print the Odd/Even elements\n");
+		printf("2. Sum & avg. of elements\n");
+		printf("3. Max & min of \n");
+ 		printf("4. Insert\n");
+		printf("5. Delete\n");
+		printf("6. Display\n");
+		printf("7. Exit\n");
 		scanf("%d", &n);
 	
 		switch(n) {
